@@ -4,12 +4,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Symfony2 BrowserKit Component
 Name:		php-symfony2-BrowserKit
-Version:	2.1.4
+Version:	2.1.6
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	27bfdaab2418cac0934bd69b002bce72
+# Source0-md5:	81b742e7e69a694b7a07a1fe8cefc792
 URL:		http://pear.symfony.com/package/BrowserKit/
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR >= 1:1.4.0
