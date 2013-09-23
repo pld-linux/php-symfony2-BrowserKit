@@ -1,16 +1,15 @@
-%define		status		stable
 %define		pearname	BrowserKit
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
-Summary:	%{pearname} - Symfony2 BrowserKit Component
+Summary:	Symfony2 BrowserKit Component
 Name:		php-symfony2-BrowserKit
-Version:	2.1.6
+Version:	2.3.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	81b742e7e69a694b7a07a1fe8cefc792
-URL:		http://pear.symfony.com/package/BrowserKit/
+# Source0-md5:	e2cefd441fca9f631313a1a8ca6d0a15
+URL:		https://github.com/symfony/BrowserKit
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -24,21 +23,19 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Symfony2 BrowserKit Component
+BrowserKit simulates the behavior of a web browser.
 
-In PEAR status of this package is: %{status}.
+The component only provide an abstract client and does not provide any
+"default" backend for the HTTP layer.
 
 %prep
 %pear_package_setup
 
 # no packaging of tests
-rm -r .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests .
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist .
 
 # fixups
-mv .%{php_pear_dir}/Symfony/Component/%{pearname}/CHANGELOG.md .
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitattributes
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitignore
 mv docs/%{pearname}/Symfony/Component/%{pearname}/* .
 
 %install
