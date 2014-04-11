@@ -9,7 +9,7 @@ License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
 # Source0-md5:	457e7b7ef2682811b58e5aad4deba2e9
-URL:		https://github.com/symfony/BrowserKit
+URL:		http://symfony.com/components/BrowserKit
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
