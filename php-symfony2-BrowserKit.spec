@@ -7,7 +7,7 @@ Version:	2.4.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
-Source0:	https://github.com/symfony/BrowserKit/archive/v%{version}/%{pearname}-%{version}.tar.gz
+Source0:	https://github.com/symfony/%{pearname}/archive/v%{version}/%{pearname}-%{version}.tar.gz
 # Source0-md5:	6e62981664ca7449fd4e2796b8ee9221
 URL:		http://symfony.com/components/BrowserKit
 BuildRequires:	phpab
@@ -17,7 +17,6 @@ Requires:	php(core) >= %{php_min_version}
 Requires:	php(date)
 Requires:	php(pcre)
 Requires:	php(spl)
-Requires:	php-channel(pear.symfony.com)
 Requires:	php-pear >= 4:1.3.10
 Requires:	php-symfony2-DomCrawler >= 2.0
 Suggests:	php-symfony2-Process
@@ -38,8 +37,8 @@ phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/BrowserKit
-cp -a *.php $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/BrowserKit
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}
+cp -a *.php $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
