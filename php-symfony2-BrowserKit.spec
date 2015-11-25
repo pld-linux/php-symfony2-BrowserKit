@@ -11,13 +11,11 @@ Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{
 # Source0-md5:	c3252eb5e41b583933fe44424f9ce5be
 URL:		http://symfony.com/components/BrowserKit
 BuildRequires:	phpab
-BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(date)
 Requires:	php(pcre)
 Requires:	php(spl)
-Requires:	php-pear >= 4:1.3.10
 Requires:	php-symfony2-DomCrawler >= 2.0.5
 Suggests:	php-symfony2-Process
 BuildArch:	noarch
