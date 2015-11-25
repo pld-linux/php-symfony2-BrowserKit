@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 BrowserKit Component
 Name:		php-symfony2-BrowserKit
-Version:	2.7.5
+Version:	2.7.7
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	695788ea98970aa55ae46eac6b16e338
+# Source0-md5:	c3252eb5e41b583933fe44424f9ce5be
 URL:		http://symfony.com/components/BrowserKit
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -33,7 +33,7 @@ The component only provide an abstract client and does not provide any
 %setup -q -n browser-kit-%{version}
 
 %build
-phpab -n -e '*/Tests/*' -o autoloader.php .
+phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
