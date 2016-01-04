@@ -16,6 +16,7 @@ Requires:	php(core) >= %{php_min_version}
 Requires:	php(date)
 Requires:	php(pcre)
 Requires:	php(spl)
+Requires:	php-dirs >= 1.6
 Requires:	php-symfony2-DomCrawler >= 2.0.5
 Suggests:	php-symfony2-Process
 BuildArch:	noarch
