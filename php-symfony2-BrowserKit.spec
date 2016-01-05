@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 BrowserKit Component
 Name:		php-symfony2-BrowserKit
-Version:	2.7.7
+Version:	2.7.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	c3252eb5e41b583933fe44424f9ce5be
+# Source0-md5:	7b277cffb41bc4ab556a8a05af631d41
 URL:		http://symfony.com/components/BrowserKit
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
