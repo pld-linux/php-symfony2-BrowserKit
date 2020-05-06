@@ -2,12 +2,12 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 BrowserKit Component
 Name:		php-symfony2-BrowserKit
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	7b277cffb41bc4ab556a8a05af631d41
+# Source0-md5:	cfea82b837888e88471d95a950b648ed
 URL:		http://symfony.com/components/BrowserKit
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
